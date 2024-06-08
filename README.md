@@ -14,8 +14,9 @@ and vector databases. I find it exciting to be able to write machine-learning ap
 
 ## How to run this project
 
-
-
+- please make sure you have docker running as well as java version 21 installed on your system
+- in the application.yaml file, please provide your own open ai api key. If you don't have one, please contact me under galeajua@students.zhaw.ch
+- just run the main method of the app or start the project using your IDE
 
 
 
