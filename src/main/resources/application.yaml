@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: ml2-project
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password: postgres
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-3.5-turbo-0125
+  vectorstore:
+    pgvector:
+    index-type: HNSW
+    distance-type: COSINE_DISTANCE
+
+modelargs:
+  default-chunk-size: 600
+  min-chunk-size-chars: 500
+  min-chunk-length-to-embed: 50
+  max-num-chunks: 1000
+  keep-separator: true
+  number-of-bottom-text-lines-to-delete: 0
+  pages-per-document: 1
+  top-k: 10

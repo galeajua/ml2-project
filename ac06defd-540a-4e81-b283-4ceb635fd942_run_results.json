@@ -1,0 +1,12 @@
+{
+  "id": "ac06defd-540a-4e81-b283-4ceb635fd942",
+  "defaultChunkSize": 256,
+  "minChunkSizeChars": 500,
+  "minChunkLengthToEmbed": 5,
+  "maxNumChunks": 1000,
+  "keepSeparator": true,
+  "vectorSimilarity": {
+    "cosineSimilarity": 0.8567584289181831,
+    "interpretation": "vectors are of high similarity"
+  }
+}
