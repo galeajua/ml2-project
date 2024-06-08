@@ -32,7 +32,7 @@ What I did not change was the input question, to have a meaningful result to ben
 - input question: can you tell me a fact about smart homes?
 
 
-![first_run.png](img.png)
+![img_4.png](src/main/resources/first_run.png)
 img 1: first run 
 
 The vectorSimilarity property is the output of the service.
@@ -43,7 +43,7 @@ thus providing a more accurate answer, and indeed we can see that
 the cosine similarity in the second run is much higher than in
 the first one:
 
-![second_run.png](img_1.png)
+![second_run.png](src/main/resources/second_run.png)
 
 for the third run, I changed once again a parameter but this time I chose
 to change the minChunkLengthToEmbed-parameter to a much higher value. My expectation
@@ -51,7 +51,7 @@ was that accuracy would decrease drastically, because much less tokens
 were set to be embedded, thus possibly excluding important pieces of
 information. But as the third screenshot shows, cosine similarity was still pretty high:
 
-![third_run.png](img_2.png)
+![third_run.png](src/main/resources/third_run.png)
 
 this is likely due to the fact that, while more information overall was excluded,
 possible noise or less meaningful information was filtered out, resulting in a decent similarity
